@@ -341,27 +341,32 @@ footer{background:#2A1C12;padding:36px 20px;text-align:center}
     <text x="200" y="271" text-anchor="middle" font-size="18">🧶</text>
   </svg>
 </template>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '937383512448885');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=937383512448885&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </head>
 <body>
 
 <!-- SECTION 1: TICKER BAR -->
+<!-- COUNTDOWN TIMER -->
+<div id="countdown-bar" style="background:#1C1208;color:#fff;text-align:center;padding:12px 20px;">
+  <p style="font-size:13px;color:rgba(255,255,255,.8);margin-bottom:8px;font-family:'Nunito',sans-serif;">⏳ Esta oferta de lanzamiento vence en:</p>
+  <div style="display:flex;justify-content:center;gap:12px;">
+    <div style="background:#C9A96E;border-radius:8px;padding:8px 16px;min-width:58px;text-align:center;">
+      <span id="cd-days" style="font-size:1.6rem;font-weight:900;color:#fff;display:block;line-height:1;font-family:'Nunito',sans-serif;">00</span>
+      <span style="font-size:11px;color:rgba(255,255,255,.8);text-transform:uppercase;letter-spacing:.08em;font-family:'Nunito',sans-serif;">días</span>
+    </div>
+    <div style="background:#C9A96E;border-radius:8px;padding:8px 16px;min-width:58px;text-align:center;">
+      <span id="cd-hours" style="font-size:1.6rem;font-weight:900;color:#fff;display:block;line-height:1;font-family:'Nunito',sans-serif;">00</span>
+      <span style="font-size:11px;color:rgba(255,255,255,.8);text-transform:uppercase;letter-spacing:.08em;font-family:'Nunito',sans-serif;">horas</span>
+    </div>
+    <div style="background:#C9A96E;border-radius:8px;padding:8px 16px;min-width:58px;text-align:center;">
+      <span id="cd-mins" style="font-size:1.6rem;font-weight:900;color:#fff;display:block;line-height:1;font-family:'Nunito',sans-serif;">00</span>
+      <span style="font-size:11px;color:rgba(255,255,255,.8);text-transform:uppercase;letter-spacing:.08em;font-family:'Nunito',sans-serif;">min</span>
+    </div>
+    <div style="background:#C9A96E;border-radius:8px;padding:8px 16px;min-width:58px;text-align:center;">
+      <span id="cd-secs" style="font-size:1.6rem;font-weight:900;color:#fff;display:block;line-height:1;font-family:'Nunito',sans-serif;">00</span>
+      <span style="font-size:11px;color:rgba(255,255,255,.8);text-transform:uppercase;letter-spacing:.08em;font-family:'Nunito',sans-serif;">seg</span>
+    </div>
+  </div>
+</div>
 <div class="ticker-bar">
   <div class="ticker-inner">
     <div class="ticker-item">🎁 LANZAMIENTO ESPECIAL <span class="ticker-sep">✦</span> Solo por tiempo limitado <span class="ticker-sep">✦</span> ¡+4 BONOS GRATIS! <span class="ticker-sep">✦</span> 📦 Acceso inmediato después de tu compra <span class="ticker-sep">✦</span> 💰 Empezá a generar ingresos desde casa <span class="ticker-sep">✦</span></div>
@@ -718,16 +723,18 @@ src="https://www.facebook.com/tr?id=937383512448885&ev=PageView&noscript=1"
     </div>
     <div class="price-final-box reveal">
       <div class="pf-label">HOY TODO POR SOLO</div>
-      <div class="pf-price">$14.999</div>
+      <div class="pf-price">$14.999 <span style="font-size:1.2rem;color:var(--dorado-dark);font-family:'Nunito',sans-serif;font-weight:700;">ARS</span></div>
+      <div class="pf-note" style="font-size:15px;font-weight:700;color:var(--dorado-dark);">≈ USD $12 · accesible desde cualquier país de LatAm</div>
       <div class="pf-note">Pago único · Sin suscripción · Acceso inmediato y para siempre</div>
     </div>
     <div class="savings-badge reveal">🔥 AHORRÁS $50.996 — Oferta válida solo por tiempo limitado</div>
-    <a href="https://pay.hotmart.com/L105194682D" class="btn btn-primary reveal" style="font-size:19px;padding:20px 52px">¡SÍ, QUIERO MI MÉTODO PRO AHORA!</a>
+    <a href="https://go.hotmart.com/L105194682D" class="btn btn-primary reveal" style="font-size:19px;padding:20px 52px">¡SÍ, QUIERO MI MÉTODO PRO AHORA!</a>
     <div class="price-trust reveal">
       <span>💳 Tarjeta, Mercado Pago o transferencia</span>
       <span>🔒 Compra 100% segura</span>
       <span>📲 Acceso inmediato</span>
     </div>
+    <div class="reveal" style="margin-top:14px;font-size:13px;color:var(--texto-suave);text-align:center;">🔐 Procesado por <strong>Hotmart</strong> — la plataforma de productos digitales #1 de América Latina · +35 millones de usuarios · 100% segura</div>
   </div>
 </section>
 
@@ -953,9 +960,9 @@ src="https://www.facebook.com/tr?id=937383512448885&ev=PageView&noscript=1"
   <div class="container">
 
     <div class="footer-links">
-      <span>Términos y condiciones</span>
-      <span>Política de privacidad</span>
-      <span>Política de reembolso</span>
+      <a href="#">Términos y condiciones</a>
+      <a href="#">Política de privacidad</a>
+      <a href="#">Política de reembolso</a>
       <a href="/cdn-cgi/l/email-protection#fa93949c95d4978f949e959b97939d8f888f9793ba9d979b9396d4999597"><span class="__cf_email__" data-cfemail="177e797178397a62797378767a7e706265627a7e57707a767e7b3974787a">[email&#160;protected]</span></a>
     </div>
     <div class="footer-copy">
@@ -1029,6 +1036,28 @@ if(aspiraImg) {
     }
   }, {passive: true});
 }
+</script>
+<script>
+(function(){
+  var key='pv_deadline_amig';
+  var stored=localStorage.getItem(key);
+  var deadline;
+  if(stored){deadline=parseInt(stored);}
+  else{deadline=Date.now()+7*24*60*60*1000;localStorage.setItem(key,deadline);}
+  function update(){
+    var diff=deadline-Date.now();
+    if(diff<=0){diff=0;}
+    var d=Math.floor(diff/86400000);
+    var h=Math.floor((diff%86400000)/3600000);
+    var m=Math.floor((diff%3600000)/60000);
+    var s=Math.floor((diff%60000)/1000);
+    document.getElementById('cd-days').textContent=String(d).padStart(2,'0');
+    document.getElementById('cd-hours').textContent=String(h).padStart(2,'0');
+    document.getElementById('cd-mins').textContent=String(m).padStart(2,'0');
+    document.getElementById('cd-secs').textContent=String(s).padStart(2,'0');
+  }
+  update();setInterval(update,1000);
+})();
 </script>
 </body>
 </html>
